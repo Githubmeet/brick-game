@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  /* Game Container */
+  #gameContainer {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+  }
+  
+  /* Canvas */
+  #gameCanvas {
+    background-color: #333;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+  /* Game Info */
+  #gameInfo {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #gameInfo > div {
+    margin: 0.5rem;
+  }
+  
+  /* Start Button */
+  #startBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #0095DD;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startBtn:hover {
+    background-color: #007bbb;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    #gameInfo {
+      font-size: 0.8rem;
+    }
+  
+    #startBtn {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust layout for mobile devices */
+    #gameInfo {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #gameInfo > div {
+      margin: 0.25rem 0;
+      text-align: center;
+    }
+  }
